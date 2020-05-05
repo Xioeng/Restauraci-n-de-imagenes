@@ -1,1 +1,1 @@
-# Restauraci-n-de-imagenes
+# Restauracion-de-imagenes
