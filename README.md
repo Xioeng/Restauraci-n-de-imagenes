@@ -7,4 +7,5 @@ En el script "diferentes_gamma_regularizaciones.m" se encuentra un ejemplo de re
 En el script "Experimento_diferentes_metodos.m" se encuentra una muestra de la comparación del método propuesto contra otros ya propuestos.
 
 La carpeta "blind dec " corresponde al algoritmo presentado en 
+
 La carpeta "HNO " corresponde al algoritmo presentado en el libro "Deblurring Images: Matrices, Spectra, and Filtering"
