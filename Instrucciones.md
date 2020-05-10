@@ -1,8 +1,8 @@
-# Restauracion-de-imagenes borrosas
+# Restauración de imágenes borrosas
 
 Aquí se encuentran  las funciones usadas en los resultados de la tesis "Restauración de imágenes borrosas usando programación lineal", el código fue estrito para MatLab 2017 o más reciente.
 
-Scripts:
+## Scripts:
 
 -En el script "prueba.m" se encuentra un ejemplo de la aplicación del modelo
 
@@ -12,7 +12,7 @@ Scripts:
 
 -En el script "interior_iteraciones_imagen_color.m" se encuentra un ejemplo del método propuesto en una imagen de color.
 
-Carpetas:
+### Carpetas:
 
 -La carpeta "blind dec " corresponde al algoritmo presentado en el trabajo "Blind deconvolution using a normalized sparsity measure".
 
