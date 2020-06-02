@@ -2,7 +2,7 @@ function [b,c] = psfGaussSym( dim,s,p )
 %PSFGAUSS Summary of this function goes here
 %   Detailed explanation goes here
 b=zeros(dim(1),dim(2));
-%  Crea el difuminado atmosferico sin escalado
+%  Crea el difuminado atmosferico simétrico sin escalado
 i=1+floor((dim(1))/2);j=1+floor((dim(2))/2);
 for l=1:dim(1)
     for k=1:dim(2)

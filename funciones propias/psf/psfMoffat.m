@@ -5,6 +5,10 @@ function [ b,c ] = psfMoffat( dim , M, beta )
 %M: Es una matriz dos por dos indicando la dirección del degradado o un
 %número que indica que es simétrica con esa varianza.
 %Beta: coeficiente de decaimiento
+%Datos de salida: b: la psf, c: su centro.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 if  length(dim)==1
     dim=[dim dim];

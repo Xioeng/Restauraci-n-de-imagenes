@@ -4,6 +4,10 @@ function [b,c] = psfGauss( dim,s,p )
 %En el caso matricial el coeficiente q no aplica.  
 %Si s es un número y q no se especifica,  q se asumirá como 2. 
 %Si la dimensión es un número se asume cuadrada
+%Datos de salida: b: la psf, c: su centro.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 if nargin<2|| nargin>3
     error('Faltan o sobran datos')

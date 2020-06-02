@@ -1,6 +1,11 @@
 function [P,c] = psfMov(dim,a)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%  Crea una psf de movimiento a 'a' grados.
+%Datos de entrada: a: ángulo, dim: dimensiones.
+%Datos de salida: P: la psf, c: su centro.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
+%%
 A=zeros(dim);
 c=floor(dim/2)+1;
 for j=0:c-1
