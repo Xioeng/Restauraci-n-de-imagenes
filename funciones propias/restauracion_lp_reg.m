@@ -1,8 +1,12 @@
 function R=restauracion_lp_reg(B,psf,c, Alpha, Gamma)
 %%
 %realiza la restauración teniendo en cuenta los parámetros de regularización
-%B es la imagen borrosa, c su centro.
+%Datos de entrada: B es la imagen borrosa,  psf es la PSF,c su centro.
 %Factores de regularizacion: Alpha para la norma y Gamma para la derivada.
+%Datos de salida: Imagen restaurada R
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 %Descomposición de la PSF
 A=crear_A_conv(psf, c, 'reflexive');

@@ -1,4 +1,13 @@
 function [f]= funcion_rest(A, b ,  x , Real)
+%  Realiza y compara la restauración de una imagen A con la imagen real
+%Datos de entrada: Matriz que representa la convolución A, imagen borrosa
+%vectorizada b, x=[alpha, gamma] factores de regularizacion, Real imagen
+%real
+%Datos de salida: error relativo en porcentaje
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
+%%
 Alpha=x(1); Gamma=x(2);
 n=length(b);
 [ H V ] = derivada(size(Real),'reflexive' );
@@ -21,5 +30,5 @@ clear A Ac Ar
 [x,e,f,g]=linprog( c ,[ ],[ ],  K, beta , zeros(7*n,1)' ,caja, []);
 
 restauracion=x(1:n);
-f=sum(abs(restauracion-Real(:)))/sum(abs(Real(:)));
+f=100*sum(abs(restauracion-Real(:)))/sum(abs(Real(:)));
 end

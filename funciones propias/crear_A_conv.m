@@ -7,7 +7,9 @@ function A=crear_A_conv(P, c, condicion)
 %c: Coordenadas del centro de la Psf
 %condicion: Especifica la condición de frontera ('zero', 'periodic',
 %'reflexive'). SI no se especifica será 'zero'.
-
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 if (nargin<2)|| (nargin>3)
     error('La cantidad de argumentos no corresponde');

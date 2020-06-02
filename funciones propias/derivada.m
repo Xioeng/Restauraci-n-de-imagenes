@@ -2,6 +2,12 @@ function [ H V ] = derivada( tam, cond )
 %DERIVADA Genera las matrices derivada en el eje x e y (H V)
 %   genera esto con la aproximacion f'(x_i)=f(x_i)-f(x_i-1). Necesita el
 %   tamaño de la imagen y la condición de frontera
+%Datos de entrada: tam: tamaño de la imagen, cond: condición de frontera.
+%('zero', 'periodic', 'reflexive')
+%Datos de salida: Matrices H y V que representan las derivadas.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 h=[ 0 0 0; -1 1 0; 0 0 0];
 H=Psfaj(h,tam);
 [B A]=kronDecomp(H,[2,2],cond);
