@@ -12,7 +12,7 @@ Aquí se encuentran  las funciones usadas en los resultados de la tesis "Restaur
 
 -En el script "interior_iteraciones_imagen_color.m" se encuentra un ejemplo del método propuesto en una imagen de color.
 
-### Carpetas:
+## Carpetas:
 
 -La carpeta "blind dec " corresponde al algoritmo presentado en el trabajo "Blind deconvolution using a normalized sparsity measure".
 
