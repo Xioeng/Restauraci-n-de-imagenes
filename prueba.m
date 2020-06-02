@@ -1,5 +1,13 @@
 % Demostración del modelo propuesto 
 %compara modelo sin regularizar y modelo regularizado
+%Se pueden cambiar la imagen en la linea 17, los parámetros en las líneas
+%de la  23-33
+%  Datos de Entrada:Ninguno- Es autocontenido
+% Datos de Salida:Ninguno-Grafica resultados , imagenes real, borrosa y
+% restauradas
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 addpath('imagenes-prueba')
 addpath(genpath('funciones propias'))

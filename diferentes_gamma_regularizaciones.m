@@ -1,5 +1,17 @@
 % Algoritmo para hacer varias restauraciones con diferentes constantes
 % Gamma de regularización indicados en el arreglo 'intervalo'
+% Algoritmo aplicado a una imagen de color. Ejemplo de la restauración de cada canal de color de
+% la imagen 'colibri.jpg'. La restauración se hace para varios coeficientes Gamma (regularización de la derivada)
+% Este script es autocontenido por lo que no requiere argumentos de entrada. 
+%**No obstante, se puede cambiar la imagen en
+% la linea 21 y su tamaño en la 22. Al final proyecta la imagen
+% real, la borrosa y las imagenes restauradas con cada coeficiente .
+% 
+%  Datos de Entrada: Ninguno
+% Datos de Salida: Imagen restaurada, borrosa y original.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 addpath(genpath('funciones propias'))
 %addpath(genpath('restauracion'))
@@ -68,6 +80,7 @@ title('Borrosa')
 figure
 for i=1:size(R,4)
 imshow(uint8(R(:, : , ; , i),[])
+pause(1)
 title('Restaurada')
 end
 save('resultados_diferentes_regularizaciones.mat','Ima','R','B','intervalo','porcentaje')

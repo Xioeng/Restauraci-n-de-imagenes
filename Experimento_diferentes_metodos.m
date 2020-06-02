@@ -1,8 +1,20 @@
-%código para probar método contra otros métodos
-% Lucy-Richardson deconvolution
-%Filtro de Winner 
-%Regularización
-%Artículo (BSNM)
+% Algoritmo para probar el método propuesto contra otros métodos:
+% -Lucy-Richardson deconvolution
+%-Filtro de Winner 
+%-Regularización de Tychonov
+%-Artículo (BSNM). 
+%**No obstante, se puede cambiar la imagen en
+%la línea 25  y su tamaño en la 27.
+%
+%  Datos de Entrada: Ninguno
+% Datos de Salida: Imagenes real, borrosa, restauradas por los diferentes
+% métodos, una tabla con resultados cuantitativos y un archivo .mat con los
+% resultados guardados.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
+
+%%
 addpath(genpath('blind-dec2'))
 addpath('HNO')
 addpath('imagenes-prueba')
@@ -12,7 +24,6 @@ addpath(genpath('funciones propias'))
 %Construcción de la PSF y la imagen borrosa
 archivo='placa-roja.jpg';
 Im=imread(archivo);
-
 Im=double(rgb2gray(Im));
 Im=imresize(Im,.8);
 

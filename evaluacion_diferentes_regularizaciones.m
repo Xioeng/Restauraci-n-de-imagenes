@@ -1,6 +1,14 @@
-%evaluacion
-%este código debe ser ejecutado después de el script
+% Evaluación: **este código debe ser ejecutado después de el script
 %'diferentes_gama_regularizaciones.m'
+% Algoritmo para evaluar las restauraciones del código 'diferentes_gama_regularizaciones.m'
+% Grafica los errores de PSNR SSIM y Err descritos en el documento
+%Los resultados son cargados en la linea 16 
+%  Datos de Entrada: restultados (.mat)
+% Datos de Salida:Ninguno-Grafica resultados
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
+%%
 addpath(genpath('funciones propias'))
 addpath(genpath('restauracion'))
 addpath(genpath('imagenes-prueba'))

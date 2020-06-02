@@ -1,5 +1,16 @@
-% Algoritmo aplicado a una imagen de color. Restauración de cada color de
-% la imagen 'colibri.jpg'
+% Algoritmo aplicado a una imagen de color. Ejemplo de la restauración de cada canal de color de
+%la imagen 'colibri.jpg'. Este script es autocontenido por lo que no
+%requiere argumentos de entrada. **No obstante, se puede cambiar la imagen en
+%la cuarta linea y su tamaño en la quinta. Al final proyecta la imagen
+%real, la restaurada y la borrosa.
+% 
+%  Datos de Entrada: Ninguno
+% Datos de Salida: Imagenes real, borrosa, restauradas por los diferentes
+% coeficientes, una tabla con resultados cuantitativos y un archivo .mat con los
+% resultados guardados.
+% Autor: José Fuentes 
+% Fecha: 2020/06/01
+% Versión: 1.0
 %%
 addpath(genpath('funciones propias'))
 addpath(genpath('restauracion'))
@@ -7,7 +18,7 @@ addpath(genpath('imagenes-prueba'))
 
 
 Ima=imread('colibri.jpg');  %poner imagen
-Ima=imresize(Ima,0.55);
+Ima=imresize(Ima,0.55); %Tamaño de la imagen
 R=[];
 parfor j=1:3
 Im=double(Ima(:,:,j));
